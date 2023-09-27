@@ -13,5 +13,10 @@
 		"svelte": "^4.0.5",
 		"vite": "^4.4.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"animate.css": "^4.1.1",
+		"fullpage.js": "^4.0.20",
+		"globe.gl": "^2.29.3"
+	}
 }

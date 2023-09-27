@@ -43,4 +43,6 @@ You can preview the production build with `npm run preview`.
 - 9/27/2023
   - **90kb/78kb** - Boilerplate skeleton app with static build adapter.
   - **94kb/78kb** - Added global stylesheets.
-  - **1.6mb/78kb** - Source Sans Pro font added and Light, Regular, Semi-Bold, and Bold added to font.css (@font-face)
+  - **1.5mb/78kb** - Source Sans Pro font added and Light, Regular, Semi-Bold, and Bold added to font.css (@font-face)
+  - **9.6mb/94kb** - Assets, Intro, About
+  
