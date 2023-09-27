@@ -41,3 +41,5 @@ You can preview the production build with `npm run preview`.
 ## Build Size Over Time
 
 9/27 - 90kb - boilerplate skeleton app with static build adapter.
+9/27 - 94kb - added global stylesheets.
+
