@@ -1,10 +1,15 @@
 
 <script>
   import "$styles/app.css";
+  import Logo from '$components/Logo.svelte';
+
 </script>
 
-<nav>
-  <p>Navigation Placeholder</p>
-</nav>
-
-<slot />
+<main>
+  <div class="fixed-page-elements">
+    <Logo />
+  </div>
+  <div id="fullpage">
+    <slot />  
+  </div>
+</main>

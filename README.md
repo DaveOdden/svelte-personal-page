@@ -39,7 +39,8 @@ You can preview the production build with `npm run preview`.
 
 
 ## Build Size Over Time
-
-9/27 - 90kb - boilerplate skeleton app with static build adapter.
-9/27 - 94kb - added global stylesheets.
-
+(total / js)
+- 9/27/2023
+  - **90kb/78kb** - Boilerplate skeleton app with static build adapter.
+  - **94kb/78kb** - Added global stylesheets.
+  - **1.6mb/78kb** - Source Sans Pro font added and Light, Regular, Semi-Bold, and Bold added to font.css (@font-face)
