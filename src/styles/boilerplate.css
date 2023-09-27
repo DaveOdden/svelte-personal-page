@@ -1,0 +1,30 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+}
+
+body {
+  --bg-color: #141416;
+  --font-color: #f0f8ff;
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: 'Source Sans Pro', serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+}
+
+main {
+  position: relative;
+  height: 100%;
+}

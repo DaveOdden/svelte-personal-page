@@ -1,0 +1,10 @@
+.is-hidden {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.fp-watermark {
+  display: none !important;
+}
