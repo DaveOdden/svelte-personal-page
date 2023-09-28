@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#9C27B0"></path></svg>
+
+<style>
+  svg {
+    margin-left: 5px;
+    transition: transform .3s ease-out;
+    transform: rotate(-90deg);
+    color: #9c27b0;
+  }
+</style>

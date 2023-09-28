@@ -26,9 +26,9 @@
         <p class="supportive-heading">JavaScript Engineer / UI Developer / Agile Practitioner</p>
       </div>
       <div class="right {matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-duration: 1000ms; --animate-delay: 600ms">
-        <p>10+ years of experience working with world renown brands.</p>
-        <p>Systematic thinker with an affinity for building components, maintaining a clean codebase, and collaborating with high-performing teams.</p>
-        <p>Focused on success through the entire product lifecycle - ideation, requirements gathering, planning, development, testing, <b>launch</b>, and maintainance.</p>
+        <p>Proponent of responsive and high-fidelity components built on-top of design systems with headless CMS integrations like Contentful.</p>
+        <p>Systematic thinker with an affinity for building components, collaborating with high-performing teams, and delivering reliable code on time, every time.</p>
+        <p>Focused on success through the entire product lifecycle - ideation, requirements gathering, planning, development, testing, <b>launch</b>, and maintenance.</p>
       </div>
     </MediaQuery>
   </div>

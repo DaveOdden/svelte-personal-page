@@ -37,10 +37,9 @@
 <section class="section section-experience fp-auto-height-responsive">
   <MediaQuery query="(max-width: 992px)" let:matches>
     <div class="section-content {matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0s">
-      <h3>Working with World Renown Companies for 10+ years</h3>
+      <h3>10+ years working with world-renowned brands</h3>
       <h2>Skills & Experience</h2>
-      <p>The main area of expertise is front end development (client side of the web).</p>
-      <p>HTML, CSS, JS, building small and medium web applications with Vue or React, custom plugins, features, animations, and coding interactive layouts. I have also full-stack developer experience with one of the most popular open source CMS on the web - WordPress</p>
+      <p>Lead and operated within enterprise-level agile teams, constructing handcrafted, custom experiences across a range of different tech stacks.</p>
       <p>Visit my <a href="https://www.linkedin.com/in/dave-odden" target="_blank">Linkedin</a> for more details.</p>
       {#if !matches}
         <ul>
@@ -136,6 +135,7 @@
     opacity: .7;
     margin-bottom: 0;
     font-size: 18px;
+    word-spacing: 1.5px;
   }
 
   p {

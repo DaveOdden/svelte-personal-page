@@ -3,11 +3,11 @@
 ## Features
 - Intro, About, Experience, Portfolio, Contact components
 - Responsive / Mobile first approach with simplified mobile experience
-- Fullpage scrolling on desktop (fullpage.js)
-- Element enter/exit transitions (animate.css and css custom properties)
-- Lazy loaded 3D Globe (globe.gl)
-- Iconify svelte pack of icons (https://iconify.design/docs/icon-components/svelte/)
-- Core Web Vitals in the green
+- Fullpage scrolling on desktop ([fullpage.js](https://alvarotrigo.com/fullPage/))
+- Element enter/exit transitions ([animate.css](https://animate.style/) and css custom properties)
+- Lazy loaded 3D Globe ([globe.gl](globe.gl))
+- Svelte based icon pack ([Iconify](https://iconify.design/docs/icon-components/svelte/))
+- Core Web Vitals scores in the green
 
 ## Build Size Over Time
 (total / js)

@@ -1,6 +1,7 @@
 <script>
   import { fullPageInfo } from '$lib/store';
 	import MediaQuery from "$lib/util/Breakpoint.svelte";
+  import ArrowIcon from '$components/ArrowIcon.svelte';
 
   let fpCurrentSection;
   let fpNextSection;
@@ -21,9 +22,9 @@
   <div class="section-content">
     <MediaQuery query="(max-width: 992px)" let:matches>
       <div class="left {matches ? '' : 'animate__animated'} {animateCont}" style="--animate-duration: 1000ms; --animate-delay: 400ms">
-        <h2>Creative Front-End Engineer</h2>
-        <p class="supportive-copy">Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences.</p>
-        <a href="#about">About Me</a>
+        <h2>Creative Front-End Web App Engineer</h2>
+        <p class="supportive-copy">Builder of unique experiences by leveraging current technologies, dynamic data through headless CMS's.</p>
+        <a href="#about">About Me <ArrowIcon/></a>
       </div>
       <div class="right {matches ? '' : 'animate__animated'} {animateCont2}" style="--animate-duration: 1000ms; --animate-delay: 200ms">
         <div class="computer-screen">
@@ -38,11 +39,11 @@
   </div>
 </section>
 
-
 <style>
 
   .bg-code-decor {
     transform: rotate(180deg);
+    pointer-events: none;
   }
 
   .section-content {
@@ -57,7 +58,7 @@
 
 
   .left, .right {
-    width: 100%;;
+    width: 100%;
   }
 
   @media (min-width: 990px) {

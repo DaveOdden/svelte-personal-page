@@ -1,6 +1,7 @@
 <script>
   import { fullPageInfo } from '$lib/store';
 	import MediaQuery from "$lib/util/Breakpoint.svelte";
+  import ArrowIcon from '$components/ArrowIcon.svelte';
 
   let fpDirection, exitingSlideIndex, enteringSlideIndex;
   let animation_slide2_container,
@@ -85,7 +86,7 @@
           <div class="slide-content centered intro">
             <h2>Uniquely Bespoke, <br>Pixel-Perfect Digital Products</h2>
             <p>minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut </p>
-            <a href="#portfolio/slide2">See Recent Projects</a>
+            <a href="#portfolio/slide2">See Recent Projects <ArrowIcon/></a>
           </div>
 
 
@@ -102,7 +103,7 @@
               <p>Online store for selling apparel & foot wear.</p>
               <p>Built with: React, Redux, Node, JavaScript, SASS, Custom Stripe Integration, Firebase (NoSQL Database, Cloud Functions, Cloud Storage, Hosting).</p>
               <div>
-                <a href="http://pga.com/workingolf">Visit the app</a>
+                <a href="http://pga.com/workingolf" target="_blank">Visit the app <ArrowIcon/></a>
               </div>
             </div>
             <div class="{matches ? '' : 'animate__animated'}" style="--animate-duration: 1200ms;">
@@ -126,7 +127,7 @@
               <p>Online store for selling apparel & foot wear.</p>
               <p>Built with: React, Redux, Node, JavaScript, SASS, Custom Stripe Integration, Firebase (NoSQL Database, Cloud Functions, Cloud Storage, Hosting).</p>
               <div>
-                <a href="http://carmax.com">Visit the app</a>
+                <a href="http://carmax.com" target="_blank">Visit the app <ArrowIcon/></a>
               </div>
             </div>
             <div class="{matches ? '' : 'animate__animated'}" style="--animate-duration: 1200ms;">
