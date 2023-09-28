@@ -3,6 +3,7 @@
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: url('./fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
 }
 
@@ -10,6 +11,7 @@
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('./fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
 }
 
@@ -17,6 +19,7 @@
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: url('./fonts/source-sans-pro/SourceSansPro-Semibold.otf') format('opentype');
 }
 
@@ -24,5 +27,6 @@
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
 }

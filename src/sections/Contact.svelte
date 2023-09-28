@@ -3,8 +3,7 @@
 	import MediaQuery from "$lib/util/Breakpoint.svelte";
 
   let el;
-
-  onMount(async() => {
+  async function initGlobe() {
     const Globe = (await import('globe.gl')).default 
     const myGlobe = Globe();
     myGlobe(el)
@@ -25,6 +24,10 @@
       directionalLight && directionalLight.position.set(1, 1, 1); // change light position to see the specularMap's effect
       directionalLight.position.copy(myGlobe.camera().position);
     }, 1);
+  }
+
+  onMount(async() => {
+    await new Promise(initGlobe => setTimeout(initGlobe, 1000));
   })
 </script>
 

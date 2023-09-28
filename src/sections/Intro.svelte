@@ -20,12 +20,12 @@
 <section class="section section-intro fp-auto-height-responsive">
   <div class="section-content">
     <MediaQuery query="(max-width: 992px)" let:matches>
-      <div class="left {matches ? '' : 'animate__animated'} animate__fadeIn {animateCont}" style="--animate-duration: 1000ms; --animate-delay: 400ms">
+      <div class="left {matches ? '' : 'animate__animated'} {animateCont}" style="--animate-duration: 1000ms; --animate-delay: 400ms">
         <h2>Creative Front-End Engineer</h2>
         <p class="supportive-copy">Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences.</p>
-        <a href="#">About Me</a>
+        <a href="#about">About Me</a>
       </div>
-      <div class="right {matches ? '' : 'animate__animated'} animate__fadeIn {animateCont2}" style="--animate-duration: 1000ms; --animate-delay: 200ms">
+      <div class="right {matches ? '' : 'animate__animated'} {animateCont2}" style="--animate-duration: 1000ms; --animate-delay: 200ms">
         <div class="computer-screen">
           <img src="./computer.svg" class="computer-graphic" alt="computer screen with coffee and objets" />
         </div>

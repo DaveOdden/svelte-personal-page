@@ -85,7 +85,7 @@
           <div class="slide-content centered intro">
             <h2>Uniquely Bespoke, <br>Pixel-Perfect Digital Products</h2>
             <p>minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut </p>
-            <a href="/slide1">See Recent Projects</a>
+            <a href="#portfolio/slide1">See Recent Projects</a>
           </div>
 
 
@@ -102,8 +102,7 @@
               <p>Online store for selling apparel & foot wear.</p>
               <p>Built with: React, Redux, Node, JavaScript, SASS, Custom Stripe Integration, Firebase (NoSQL Database, Cloud Functions, Cloud Storage, Hosting).</p>
               <div>
-                <a>View the code</a>
-                <a>Visit the app</a>
+                <a href="http://pga.com/workingolf">Visit the app</a>
               </div>
             </div>
             <div class="{matches ? '' : 'animate__animated'}" style="--animate-duration: 1200ms;">
@@ -127,8 +126,7 @@
               <p>Online store for selling apparel & foot wear.</p>
               <p>Built with: React, Redux, Node, JavaScript, SASS, Custom Stripe Integration, Firebase (NoSQL Database, Cloud Functions, Cloud Storage, Hosting).</p>
               <div>
-                <a>View the code</a>
-                <a>Visit the app</a>
+                <a href="http://carmax.com">Visit the app</a>
               </div>
             </div>
             <div class="{matches ? '' : 'animate__animated'}" style="--animate-duration: 1200ms;">
