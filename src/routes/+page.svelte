@@ -3,11 +3,12 @@
   import { fullPageInfo } from '$lib/store';
   import Intro from '$sections/Intro.svelte';
   import About from '$sections/About.svelte';
-  // import Experience from '$sections/Experience.svelte';
+  import Experience from '$sections/Experience.svelte';
   import Portfolio from '$sections/Portfolio.svelte';
-  import Contact from '$sections/Contact.svelte';
+  import viewport from '$lib/util/useViewportAction';
   import 'animate.css';
-
+  
+  let contactComponentPromise;
   let fullpage;
   let prevSection = 0;
   let nextSection = 0;
@@ -16,6 +17,7 @@
   let sliding = false;
   let slideCount = 3;
   const breakpoint = 992;
+  let isLoaded = false;
 
   onMount(async() => {
     // const sh = await import('fullpage.js/dist/scrollHorizontal')   
@@ -78,7 +80,19 @@
 <div id="fullpage">
   <Intro />
   <About />
-  <!-- <Experience /> -->
+  <Experience />
   <Portfolio />
-  <Contact />
+  <div use:viewport on:enterViewport={()=> {
+    if (!isLoaded) {
+      contactComponentPromise = import('$sections/Contact.svelte')
+    }
+    isLoaded = true;
+  }} />
+    {#if contactComponentPromise}
+      {#await contactComponentPromise}
+        ..Loading
+      {:then { default: Contact }}
+        <Contact />
+      {/await}
+    {/if}
 </div>

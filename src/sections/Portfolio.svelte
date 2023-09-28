@@ -85,7 +85,7 @@
           <div class="slide-content centered intro">
             <h2>Uniquely Bespoke, <br>Pixel-Perfect Digital Products</h2>
             <p>minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut </p>
-            <a href="#portfolio/slide1">See Recent Projects</a>
+            <button>See Recent Projects</button>
           </div>
 
 

@@ -1,22 +1,22 @@
 <script>
-  import Javascript from '~icons/teenyicons/javascript-solid'
-  import React from '~icons/teenyicons/react-outline'
-  import NextJS from '~icons/teenyicons/nextjs-solid'
-  import Angular from '~icons/teenyicons/angular-solid'
-  import Vue from '~icons/akar-icons/vue-fill'
-  import Svelte from '~icons/simple-icons/svelte'
-  import Css3 from '~icons/simple-icons/css3'
-  import Sass from '~icons/fa6-brands/sass'
-  import Gsap from '~icons/logos/greensock-icon'
-  import Git from '~icons/bi/git'
-  import CiCd from '~icons/clarity/ci-cd-line'
-  import A11y from '~icons/solar/accessibility-bold'
-  import Rwd from '~icons/mdi/responsive'
-  import FeBuildTools from '~icons/devicon-plain/webpack'
-  import Agile from '~icons/ph/kanban-duotone'
-  import ThirdParty from '~icons/gg/ui-kit'
-  import Figma from '~icons/file-icons/figma'
-  import Api from '~icons/icon-park-twotone/data'
+  // import Javascript from '~icons/teenyicons/javascript-solid'
+  // import React from '~icons/teenyicons/react-outline'
+  // import NextJS from '~icons/teenyicons/nextjs-solid'
+  // import Angular from '~icons/teenyicons/angular-solid'
+  // import Vue from '~icons/akar-icons/vue-fill'
+  // import Svelte from '~icons/simple-icons/svelte'
+  // import Css3 from '~icons/simple-icons/css3'
+  // import Sass from '~icons/fa6-brands/sass'
+  // import Gsap from '~icons/logos/greensock-icon'
+  // import Git from '~icons/bi/git'
+  // import CiCd from '~icons/clarity/ci-cd-line'
+  // import A11y from '~icons/solar/accessibility-bold'
+  // import Rwd from '~icons/mdi/responsive'
+  // import FeBuildTools from '~icons/devicon-plain/webpack'
+  // import Agile from '~icons/ph/kanban-duotone'
+  // import ThirdParty from '~icons/gg/ui-kit'
+  // import Figma from '~icons/file-icons/figma'
+  // import Api from '~icons/icon-park-twotone/data'
   import { fullPageInfo } from '$lib/store';
 	import MediaQuery from "$lib/util/Breakpoint.svelte";
 
@@ -43,82 +43,7 @@
       <p>The main area of expertise is front end development (client side of the web).</p>
       <p>HTML, CSS, JS, building small and medium web applications with Vue or React, custom plugins, features, animations, and coding interactive layouts. I have also full-stack developer experience with one of the most popular open source CMS on the web - WordPress</p>
       <p>Visit my <a href="http://linkedin.com" target="_blank">Linkedin</a> for more details.</p>
-      {#if !matches}
-      <ul>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.1s">
-          <div class="icon"><Javascript /></div>
-          <div class="label">JavaScript</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.1s">
-          <div class="icon"><React /></div>
-          <div class="label">React</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.2s">
-          <div class="icon"><NextJS /></div>
-          <div class="label">NextJS</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.3s">
-          <div class="icon"><Angular /></div>
-          <div class="label">Angular</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.4s">
-          <div class="icon"><Vue /></div>
-          <div class="label">Vue</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.5s">
-          <div class="icon"><Svelte /></div>
-          <div class="label">Svelte</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.6s">
-          <div class="icon"><Gsap /></div>
-          <div class="label">GSAP</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.7s">
-          <div class="icon"><Css3 /></div>
-          <div class="label">CSS</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.8s">
-          <div class="icon"><Sass /></div>
-          <div class="label">Sass</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.9s">
-          <div class="icon"><ThirdParty /></div>
-          <div class="label">Third Party</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0.9s">
-          <div class="icon"><Api /></div>
-          <div class="label">API Integration</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 1s">
-          <div class="icon"><FeBuildTools /></div>
-          <div class="label">Build Tools</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 1.1s">
-          <div class="icon"><Git /></div>
-          <div class="label">Git</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 1.2s">
-          <div class="icon"><A11y /></div>
-          <div class="label">A11y</div>
-        </li>
-        <!-- <li>
-          <div class="icon"><Rwd /></div>
-          <div class="label">Rwd</div>
-        </li> -->
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 1.3s">
-          <div class="icon"><CiCd /></div>
-          <div class="label">CI/CD</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 1.4s">
-          <div class="icon"><Figma /></div>
-          <div class="label">Figma</div>
-        </li>
-        <li class="{matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 1.5s">
-          <div class="icon"><Agile /></div>
-          <div class="label">Agile</div>
-        </li>
-      </ul>
-      {/if}
+
     </div>
   </MediaQuery>
   <div class="bg-code-decor">

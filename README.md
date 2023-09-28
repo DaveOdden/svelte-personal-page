@@ -45,4 +45,5 @@ You can preview the production build with `npm run preview`.
   - **94kb/78kb** - Added global stylesheets.
   - **1.5mb/78kb** - Source Sans Pro font added and Light, Regular, Semi-Bold, and Bold added to font.css (@font-face)
   - **9.6mb/94kb** - Assets, Intro, About
-  
+  - **9.6mb/373kb** - All Components added
+
