@@ -23,7 +23,7 @@
       <div class="left {matches ? '' : 'animate__animated'} {animateCont}" style="--animate-duration: 1000ms; --animate-delay: 400ms">
         <h2>Creative Front-End Engineer</h2>
         <p class="supportive-copy">Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences.</p>
-        <a href="#about">About Me</a>
+        <!-- <a href="#about">About Me</a> -->
       </div>
       <div class="right {matches ? '' : 'animate__animated'} {animateCont2}" style="--animate-duration: 1000ms; --animate-delay: 200ms">
         <div class="computer-screen">

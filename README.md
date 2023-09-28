@@ -46,4 +46,5 @@ You can preview the production build with `npm run preview`.
   - **1.5mb/78kb** - Source Sans Pro font added and Light, Regular, Semi-Bold, and Bold added to font.css (@font-face)
   - **9.6mb/94kb** - Assets, Intro, About
   - **9.6mb/373kb** - All Components added
+  - **10.6mb/1.4mb** - 3d component, fullpage.js with scrollHorizontal
 

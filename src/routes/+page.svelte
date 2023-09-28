@@ -1,14 +1,21 @@
+<svelte:head>
+  <script src="/vendor/fullpage.js/scrollHorizontal.js"></script>
+</svelte:head>
+
 <script>
   import { onMount, setContext } from "svelte";
   import { fullPageInfo } from '$lib/store';
+  import Logo from '$components/Logo.svelte';
+  import SectionControls from '$components/SectionControls.svelte';
+  import ScrollButton from '$components/ScrollButton.svelte';
   import Intro from '$sections/Intro.svelte';
   import About from '$sections/About.svelte';
   import Experience from '$sections/Experience.svelte';
   import Portfolio from '$sections/Portfolio.svelte';
-  import viewport from '$lib/util/useViewportAction';
+  import Contact from '$sections/Contact.svelte';
+  import "fullpage.js/dist/fullpage.min.css";
   import 'animate.css';
   
-  let contactComponentPromise;
   let fullpage;
   let prevSection = 0;
   let nextSection = 0;
@@ -17,10 +24,8 @@
   let sliding = false;
   let slideCount = 3;
   const breakpoint = 992;
-  let isLoaded = false;
 
   onMount(async() => {
-    // const sh = await import('fullpage.js/dist/scrollHorizontal')   
     const fp = await import('fullpage.js/dist/fullpage.extensions.min')       
     const ease = await import('fullpage.js/vendors/easings')   
     fullpage = fp.default;  
@@ -77,22 +82,15 @@
   setContext('moveSectionDown', moveSectionDown)
 </script>
 
+<div class="fixed-page-elements">
+  <Logo />
+  <SectionControls />
+  <ScrollButton />
+</div>
 <div id="fullpage">
   <Intro />
   <About />
   <Experience />
   <Portfolio />
-  <div use:viewport on:enterViewport={()=> {
-    if (!isLoaded) {
-      contactComponentPromise = import('$sections/Contact.svelte')
-    }
-    isLoaded = true;
-  }} />
-    {#if contactComponentPromise}
-      {#await contactComponentPromise}
-        ..Loading
-      {:then { default: Contact }}
-        <Contact />
-      {/await}
-    {/if}
+  <Contact />
 </div>
