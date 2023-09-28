@@ -22,14 +22,13 @@
   <div class="section-content">
     <MediaQuery query="(max-width: 992px)" let:matches>
       <div class="left {matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-duration: 1200ms; --animate-delay: 400ms">
-        <h2>Hi, I'm Todor Web Developer</h2>
-        <p class="supportive-heading">Front End Developer / JavaScript Fan / Wordpress Expert</p>
+        <h2>Hi, I'm Dave Odden<br> (/oʊden/)</h2>
+        <p class="supportive-heading">JavaScript Engineer / UI Developer / Agile Practitioner</p>
       </div>
       <div class="right {matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-duration: 1000ms; --animate-delay: 600ms">
-        <p>Professionally connected with the web development industry.</p>
-        <p>Problem solver, well-organised person, loyal employee with high attention to detail.
-        Fan of Boxing, outdoor activities, video games, and coding of course.</p>
-        <p>Interested in the entire frontend spectrum and working on ambitious projects with interesting people.</p>
+        <p>10+ years of experience working with world renown brands.</p>
+        <p>Systematic thinker with an affinity for building components, maintaining a clean codebase, and collaborating with high-performing teams.</p>
+        <p>Focused on success through the entire product lifecycle - ideation, requirements gathering, planning, development, testing, <b>launch</b>, and maintainance.</p>
       </div>
     </MediaQuery>
   </div>
@@ -40,7 +39,7 @@
 
 <style>
   h2 {
-    max-width: 450px;
+    max-width: 500px;
   }
 
   .bg-code-decor {
@@ -64,8 +63,8 @@
 
   @media (min-width: 990px) {
     .left, .right {
-    width: 50%;
-  }
+      width: 50%;
+    }
   }
 
   .right {

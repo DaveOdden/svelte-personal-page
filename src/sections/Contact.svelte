@@ -24,7 +24,7 @@
       <div class="copy-content">
         <p>What would you do if you had a software expert available at your fingertips?</p>
         <p>Want to start new project? Or just say hey. You can also follow me on Instagram.</p>
-        <h3>tdrdimov@gmail.com</h3>
+        <h3>davidpodden@gmail.com</h3>
       </div>
     </MediaQuery>
   </div>

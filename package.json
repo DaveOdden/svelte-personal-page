@@ -8,15 +8,28 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@iconify-json/akar-icons": "^1.1.19",
+		"@iconify-json/bi": "^1.1.20",
+		"@iconify-json/clarity": "^1.1.9",
+		"@iconify-json/devicon-plain": "^1.1.14",
+		"@iconify-json/fa6-brands": "^1.1.13",
+		"@iconify-json/file-icons": "^1.1.5",
+		"@iconify-json/gg": "^1.1.6",
+		"@iconify-json/icon-park-twotone": "^1.1.10",
+		"@iconify-json/logos": "^1.1.37",
+		"@iconify-json/mdi": "^1.1.54",
+		"@iconify-json/ph": "^1.1.6",
+		"@iconify-json/simple-icons": "^1.1.72",
+		"@iconify-json/solar": "^1.1.5",
+		"@iconify-json/teenyicons": "^1.1.6",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
-		"svelte": "^4.0.5",
-		"vite": "^4.4.2"
-	},
-	"type": "module",
-	"dependencies": {
 		"animate.css": "^4.1.1",
 		"fullpage.js": "^4.0.20",
-		"globe.gl": "^2.29.3"
-	}
+		"globe.gl": "^2.29.3",
+		"svelte": "^4.0.5",
+		"unplugin-icons": "^0.17.0",
+		"vite": "^4.4.2"
+	},
+	"type": "module"
 }
