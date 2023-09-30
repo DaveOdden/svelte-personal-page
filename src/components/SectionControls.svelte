@@ -28,8 +28,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    right: 3.125rem;
+    right: 2.5rem;
     height: calc(100vh - 6.25rem);
+  }
+
+  @media (min-width: 1440px) {
+    nav {
+      right: 3.125rem;
+    }
   }
 
   .slide-indicator-module {

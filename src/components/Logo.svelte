@@ -20,7 +20,11 @@
   top: 0;
   z-index: 100;
   display: flex;
-  @media (min-width: 990px) {
+  @media (min-width: 992px) {
+    left: 2.5rem;
+    margin: 2.5rem 0;
+  }
+  @media (min-width: 1440px) {
     left: 3.125rem;
     margin: 3.125rem 0;
   }

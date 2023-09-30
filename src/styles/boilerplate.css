@@ -5,6 +5,7 @@
 
 html {
   height: auto;
+  overflow: hidden;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   --font-color: #f0f8ff;
   background: var(--bg-color);
   color: var(--font-color);
-  font-family: 'Source Sans Pro', serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: normal;
   margin: 0;
   padding: 0;

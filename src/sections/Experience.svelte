@@ -37,9 +37,10 @@
 <section class="section section-experience fp-auto-height-responsive">
   <MediaQuery query="(max-width: 992px)" let:matches>
     <div class="section-content {matches ? '' : 'animate__animated'} {animateCont} {animateContUp}" style="--animate-delay: 0s">
-      <h3>10+ years working with world-renowned brands</h3>
+      <!-- <h3>10+ years working with world-renowned brands</h3> -->
+      <h3>10+ years working with renowned brands</h3>
       <h2>Skills & Experience</h2>
-      <p>Lead and operated within enterprise-level agile teams, constructing handcrafted, custom experiences across a range of different tech stacks.</p>
+      <p>Lead and operated within enterprise-level agile teams, constructing handcrafted, custom digital experiences across a range of different tech stacks.</p>
       <p>Visit my <a href="https://www.linkedin.com/in/dave-odden" target="_blank">Linkedin</a> for more details.</p>
       {#if !matches}
         <ul>

@@ -71,6 +71,14 @@
         } else if (sliding) {
           return false;
         }
+      },
+      afterResponsive: function(isResponsive){
+        if(fpInstance) {
+          fpInstance.reBuild();
+          if(isResponsive) {
+            console.log(isResponsive);
+          }
+        }
       }
     });
   });
@@ -94,3 +102,12 @@
   <Portfolio />
   <Contact />
 </div>
+
+<style lang="scss">
+  #fullpage {
+    @media (max-width: 992px) {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+</style>
