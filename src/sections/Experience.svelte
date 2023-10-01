@@ -121,7 +121,7 @@
   </div>
 </section>
 
-<style>
+<style lang="scss">
   .bg-code-decor {
     transform: rotate(180deg);
   }
@@ -159,23 +159,29 @@
   ul {
     list-style: none;
     padding: 0;;
-    max-width: 1330px;
+    max-width: 900px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4rem;
+    @media (min-width: 1440px) {
+      max-width: 1330px;
+    }
   }
 
   ul li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 30px 3rem;
+    margin: 0 18px 3rem;
     text-align: left;
+    @media (min-width: 1440px) {
+      margin: 0 30px 3rem;
+    }
   }
 
-  @media (min-width: 990px) {
+  @media (min-width: 992px) {
     ul li {
       justify-content: center;
       text-align: center;
@@ -183,7 +189,10 @@
   }
 
   .icon {
-    font-size: 4rem;
+    font-size: 3rem;
+    @media (min-width: 1440px) {
+      font-size: 4rem;
+    }
   }
 
   .label {
@@ -192,11 +201,5 @@
 
   .section-content {
     flex-direction: column;
-  }
-
-  @media (min-width: 990px) {
-    /* .section-content {
-      flex-direction: row;
-    } */
   }
 </style>
