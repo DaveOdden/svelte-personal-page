@@ -143,10 +143,7 @@
     max-width: 700px;
     text-align: left;
     margin-top: 0;
-  }
-
-  @media (min-width: 990px) {
-    p {
+    @media (min-width: 990px) {
       text-align:center;
     }
   }
@@ -176,15 +173,12 @@
     flex-direction: column;
     margin: 0 18px 3rem;
     text-align: left;
-    @media (min-width: 1440px) {
-      margin: 0 30px 3rem;
-    }
-  }
-
-  @media (min-width: 992px) {
-    ul li {
+    @media (min-width: 992px) {
       justify-content: center;
       text-align: center;
+    }
+    @media (min-width: 1440px) {
+      margin: 0 30px 3rem;
     }
   }
 
