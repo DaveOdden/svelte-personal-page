@@ -6,14 +6,14 @@
   {#if matches}
     <nav>
       <div class="slide-indicator-module">
-        <ul id="menu">
-          <li data-menuanchor="intro"><a href="#intro" title="intro">00</a></li>
-          <li data-menuanchor="about"><a href="#about" title="about">01</a></li>
-          <li data-menuanchor="experience"><a href="#experience" title="experience">02</a></li>
-          <li data-menuanchor="portfolio"><a href="#portfolio" title="portfolio">03</a></li>
-          <li data-menuanchor="contact"><a href="#contact" title="contact">04</a></li>
+        <div id="menu">
+          <div data-menuanchor="intro"><a href="#intro" title="intro">00</a></div>
+          <div data-menuanchor="about"><a href="#about" title="about">01</a></div>
+          <div data-menuanchor="experience"><a href="#experience" title="experience">02</a></div>
+          <div data-menuanchor="portfolio"><a href="#portfolio" title="portfolio">03</a></div>
+          <div data-menuanchor="contact"><a href="#contact" title="contact">04</a></div>
           <div class="indicator"></div>
-        </ul>
+        </div>
       </div>
     </nav>
   {/if}
@@ -42,14 +42,14 @@
     position: relative;
   }
 
-  ul {
+  #menu {
     list-style: none;
     margin: 0;
     padding: 0;
     position: relative;
   }
 
-  li a {
+  #menu a {
     width: 50px;
     height: 50px;
     display: flex;
@@ -74,27 +74,27 @@
     transition: all 1s cubic-bezier(0.76, 0, 0, 1)
   }
 
-  #menu li:nth-child(1) {
+  #menu > div:nth-child(1) {
     &.active ~ .indicator {
       transform: translateY(0);
     }
   }
-  #menu li:nth-child(2) {
+  #menu > div:nth-child(2) {
     &.active ~ .indicator {
       transform: translateY(50px);
     }
   }
-  #menu li:nth-child(3) {
+  #menu > div:nth-child(3) {
     &.active ~ .indicator {
       transform: translateY(100px);
     }
   }
-  #menu li:nth-child(4) {
+  #menu > div:nth-child(4) {
     &.active ~ .indicator {
       transform: translateY(150px);
     }
   }
-  #menu li:nth-child(5) {
+  #menu > div:nth-child(5) {
     &.active ~ .indicator {
       transform: translateY(200px);
     }

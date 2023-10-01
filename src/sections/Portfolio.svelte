@@ -80,23 +80,17 @@
     </div>
     <div class="section-content">
       <div class="{matches ? '' : 'slide'}" data-anchor="slide1">
-        <div class="">
-
-
-          <div class="slide-content centered intro">
-            <h2>Inventive Ideas Need Personalized Solutions</h2>
-            <p>With a toolkit of strategies and proven deliveries, I work closely with stakeholders and team members to translate requirements into products.</p>
-            <a href="#portfolio/slide2">See Recent Projects <ArrowIcon/></a>
-          </div>
-
-
+        <div class="slide-content centered intro">
+          <h2>Inventive Ideas Need Personalized Solutions</h2>
+          <p>Through understanding business problems, . I work closely with stakeholders and team members to translate requirements into products.</p>
+          {#if !matches}
+          <a href="#portfolio/slide2">See Recent Projects <ArrowIcon/></a>
+          {/if}
         </div>
       </div>
       <div class="{matches ? '' : 'slide'}" data-anchor="slide2">
-        <div class="">
 
-
-          <div class="slide-content feature {matches ? '' : 'animate__animated'} ">
+          <div class="slide-content feature slide2 {matches ? '' : 'animate__animated'} ">
             <div class="left project-summary {matches ? '' : 'animate__animated'} {animation_slide2_constLeft} {animation_slide2_constRight}" style="--animate-duration: 800ms; --animate-delay: 500ms">
               <div class="overline">REACT, GSAP, MUI, NEXTJS, CONTENTFUL</div>
               <h2>The PGA</h2>
@@ -113,8 +107,6 @@
             </div>
           </div>
 
-
-        </div>
       </div>
       <div class="{matches ? '' : 'slide'}" data-anchor="slide3">
         <div class="">
@@ -175,6 +167,10 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    
+    @media (min-width: 992px) {
+      text-align: center;
+    }
   }
 
   .slide-content.intro {
@@ -192,6 +188,7 @@
       flex-direction: row;
       margin-top: 0;
       padding: 0 2.5rem;
+      text-align: left;
     }
     @media (min-width: 1440px) {
       padding: 0;
@@ -205,8 +202,10 @@
     }
   }
 
-  .slide-content.centered p {
-    padding: 1.5rem 0;
+  .slide-content.feature.slide2 {
+    @media (min-width: 992px) {
+      margin-top: 2rem;
+    }
   }
 
   .project-summary {
@@ -239,6 +238,12 @@
     @media (min-width: 1440px) {
       width: 100%;
     }
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   img {
