@@ -24,7 +24,7 @@
       <MediaQuery query="(max-width: 992px)" let:matches>
         <div class="left {matches ? '' : 'animate__animated'} {animateCont}" style="--animate-duration: 1000ms; --animate-delay: 400ms">
           <h2>Creative Front-End Web App Engineer</h2>
-          <p class="supportive-copy">Hyper focused on high-fidelity user interfaces, refined team prcoesses, and delivering exceptional quality products.</p>
+          <p class="supportive-copy">Hyper focused on high-fidelity user interfaces, refined team prcoesses, and delivering exceptional quality&nbsp;products.</p>
           <a href="#about">Learn More <ArrowIcon/></a>
         </div>
         <div class="right {matches ? '' : 'animate__animated'} {animateCont2}" style="--animate-duration: 1000ms; --animate-delay: 200ms">

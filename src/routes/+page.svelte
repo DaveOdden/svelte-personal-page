@@ -23,6 +23,8 @@
   let slideIndexS = 0;
   let sliding = false;
   let slideCount = 3;
+  let currentAnchor = "intro";
+  let anchorToHideScrollButton = "contact";
   const breakpoint = 992;
 
   onMount(async() => {
@@ -56,6 +58,7 @@
         fullPageInfo.set({ prevSection: prevSection, nextSection: nextSection, direction: direction })
       },
       afterLoad: (origin, destination, direction, trigger) => {
+        currentAnchor = destination.anchor;
         prevSection = origin.index;
         nextSection = destination.index;
       },
@@ -87,13 +90,15 @@
     fpInstance.moveSectionDown();
   }
 
+  $: hideScrollButton = currentAnchor === anchorToHideScrollButton
+
   setContext('moveSectionDown', moveSectionDown)
 </script>
 
 <div class="fixed-page-elements">
   <Logo />
   <SectionControls />
-  <ScrollButton />
+  <ScrollButton hideButton={hideScrollButton}/>
 </div>
 <div id="fullpage">
   <Intro />
