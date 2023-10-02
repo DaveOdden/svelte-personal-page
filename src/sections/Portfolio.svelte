@@ -95,14 +95,14 @@
               <div class="overline">REACT, GSAP, MUI, NEXTJS, CONTENTFUL</div>
               <h2>The PGA</h2>
               <p>Professional Golfer's Association of America</p>
-              <p>Sole Engineer working with a designer to create a responsive and interactive marketing campaign to attract prospective PGA members. Features a unique vertical scroll-based carousel with path dependent states and immersive path transitions.</p>
+              <p>Sole Engineer working with designers to create a responsive and interactive marketing campaign to attract prospective PGA members. Features a unique vertical scroll-based carousel with path dependent states and immersive path transitions.</p>
               <div>
-                <a href="http://pga.com/workingolf" target="_blank">Visit the app <ArrowIcon/></a>
+                <a href="http://pga.com/workingolf" target="_blank">Visit App <ArrowIcon/></a>
               </div>
             </div>
             <div class="right {matches ? '' : 'animate__animated'}" style="--animate-duration: 1200ms;">
               <div class="{matches ? '' : 'animate__animated'} {animation_slide2_constLeft2} {animation_slide2_constRight2}" style="--animate-duration: 600ms; --animate-delay: 300ms">
-                <img src="./pga-macbook.png" alt="work-in-golf page highlight" />
+                <img src="./assets/pga-macbook.png" alt="work-in-golf page highlight" />
               </div>
             </div>
           </div>
@@ -119,12 +119,12 @@
               <p>One of America's largest used car retailer.</p>
               <p>Lead engineer, responsible for building new components, ensuring performance (CWV) scores are met, meeting accessibility requirements, managing and organizing sprint tasks, owning our CI/CD pipeline, and guiding features into existence.</p>
               <div>
-                <a href="http://carmax.com" target="_blank">Visit the app <ArrowIcon/></a>
+                <a href="http://carmax.com" target="_blank">Visit App <ArrowIcon/></a>
               </div>
             </div>
             <div class="right {matches ? '' : 'animate__animated'}" style="--animate-duration: 1200ms;">
               <div class="{matches ? '' : 'animate__animated'} {animation_slide3_constLeft} {animation_slide3_constRight}" style="--animate-duration: 600ms; --animate-delay: 300ms">
-                <img src="./carmax-macbook.png" alt="work-in-golf page highlight" />
+                <img src="./assets/carmax-macbook.png" alt="work-in-golf page highlight" />
               </div>
             </div>
           </div>
@@ -253,5 +253,9 @@
     height: auto;
     max-width: 700px;
     margin: 20px auto;
+  }
+
+  a {
+    margin-top: .75rem;
   }
 </style>
