@@ -82,7 +82,7 @@
       <div class="{matches ? '' : 'slide'}" data-anchor="slide1">
         <div class="slide-content centered intro">
           <h2>Inventive Ideas Need Personalized Solutions</h2>
-          <p>Through understanding business problems, . I work closely with stakeholders and team members to translate requirements into products.</p>
+          <p>Through understanding business problems and an expertise in crafting digital experiences, I work closely with stakeholders and team members to translate requirements into products.</p>
           {#if !matches}
           <a href="#portfolio/slide2">See Recent Projects <ArrowIcon/></a>
           {/if}
@@ -95,7 +95,7 @@
               <div class="overline">REACT, GSAP, MUI, NEXTJS, CONTENTFUL</div>
               <h2>The PGA</h2>
               <p>Professional Golfer's Association of America</p>
-              <p>Sole Engineer working with a deisgner to create a responsive and interactive web page, marketing to prospective PGA members. Features a unique vertical scroll-based carousel with path dependent states and immersive path transitions</p>
+              <p>Sole Engineer working with a designer to create a responsive and interactive marketing campaign to attract prospective PGA members. Features a unique vertical scroll-based carousel with path dependent states and immersive path transitions.</p>
               <div>
                 <a href="http://pga.com/workingolf" target="_blank">Visit the app <ArrowIcon/></a>
               </div>
@@ -117,7 +117,7 @@
               <div class="overline">REACT, GSAP, SCSS, CONTENTFUL</div>
               <h2>CarMax</h2>
               <p>One of America's largest used car retailer.</p>
-              <p>Lead engineer, responsible for building new components, ensuring performance (CWV) scores are met, meeting accessibility requirements, managing and organizing tasks, and CI/CD pipeline owner.</p>
+              <p>Lead engineer, responsible for building new components, ensuring performance (CWV) scores are met, meeting accessibility requirements, managing and organizing sprint tasks, owning our CI/CD pipeline, and guiding features into existence.</p>
               <div>
                 <a href="http://carmax.com" target="_blank">Visit the app <ArrowIcon/></a>
               </div>
@@ -203,7 +203,7 @@
   }
 
   .slide-content.feature.slide2 {
-    @media (min-width: 992px) {
+    @media (max-width: 992px) {
       margin-top: 2rem;
     }
   }

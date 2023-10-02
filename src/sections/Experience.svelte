@@ -23,12 +23,13 @@
   let animateCont, animateContUp;
 
   fullPageInfo.subscribe((val) => {
-    if(val.prevSection && val.nextSection && val.direction) {
+    //console.log(val.prevSection);
+    if(val.prevSection >= 0 && val.nextSection >= 0 && val.direction) {
       fpCurrentSection = val.prevSection;
       fpNextSection = val.nextSection;
       fpDestination = val.direction;
 
-      animateCont = fpDestination === 'down' && fpCurrentSection === 1 ? 'animate__fadeInUp animate__delay-1s' : (fpDestination === 'down' && fpCurrentSection === 2 ? 'animate__fadeOutUpBig animate__slower animate__delay-1s' : '')
+      animateCont = ((fpDestination === 'down' && fpCurrentSection === 0 && fpNextSection === 2) || (fpDestination === 'down' && fpCurrentSection === 1)) ? 'animate__fadeInUp animate__delay-1s' : (fpDestination === 'down' && fpCurrentSection === 2 ? 'animate__fadeOutUpBig animate__slower animate__delay-1s' : '')
       animateContUp = fpDestination === 'up' && fpCurrentSection === 2 ? 'animate__fadeOut ' : (fpDestination === 'up' && fpCurrentSection === 3 ? 'animate__fadeIn animate__delay-1s' : '')
     }
   })
